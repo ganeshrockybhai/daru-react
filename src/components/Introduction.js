@@ -35,6 +35,7 @@ export default function Introduction(props) {
   };
   const handleSaved = (event) => {
     props.handleSave(value);
+    setValue('')
   };
   
   return (

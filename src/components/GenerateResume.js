@@ -42,7 +42,7 @@ export default function GenerateResume(props) {
       data: content.content
     }).then(response => {
       console.log(response);
-      setResumeurl("http://45.76.117.24:3001/"+response.data.file);
+      setResumeurl("http://45.76.117.24:3001"+response.data.file);
       setDownloadReady(true);
   });
   }

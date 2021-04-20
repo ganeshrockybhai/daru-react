@@ -75,11 +75,11 @@ export default function ProfessionalExp(props) {
     <div>
       <form className={classes.root} noValidate autoComplete="off">
       
-      <TextField className={classes.textboxes} id="standard-basic" label="Location"  name="location" onChange={handleChange}/>
-      <TextField className={classes.textboxes} id="standard-basic" label="Position"  name="position"  onChange={handleChange}/>
-      <TextField className={classes.textboxes} id="standard-basic" label="Company"  name="company"  onChange={handleChange}/>
-      <TextField className={classes.textboxes} id="standard-basic" label="Start Date"   name="startDate"  onChange={handleChange}/>
-      <TextField className={classes.textboxes} id="standard-basic" label="End Date"   name="endDate"  onChange={handleChange}/>
+      <TextField className={classes.textboxes} value={location} id="standard-basic" label="Location"  name="location" onChange={handleChange}/>
+      <TextField className={classes.textboxes} value={position} id="standard-basic" label="Position"  name="position"  onChange={handleChange}/>
+      <TextField className={classes.textboxes} value={company} id="standard-basic" label="Company"  name="company"  onChange={handleChange}/>
+      <TextField className={classes.textboxes} value={startDate} id="standard-basic" label="Start Date"   name="startDate"  onChange={handleChange}/>
+      <TextField className={classes.textboxes} value={endDate} id="standard-basic" label="End Date"   name="endDate"  onChange={handleChange}/>
       <ChipInput className={classes.textboxes} value={desc} onAdd={(chip) => {
         setDesc([...desc,chip]);
       }}
