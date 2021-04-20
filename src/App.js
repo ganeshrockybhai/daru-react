@@ -62,7 +62,7 @@ const App = () => {
                   component="a"
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="http://github.com/awran5/react-material-ui-step-form"
+                  href="https://github.com/ganeshrockybhai/daru-react"
                   color="inherit"
                 >
                   <SvgIcon component="svg" className={classes.svg}>
@@ -82,16 +82,7 @@ const App = () => {
               align="center"
               style={{ margin: "10px 0", fontSize: ".75rem" }}
             >
-              Fork on{" "}
-              <Link
-                component="a"
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/awran5/react-material-ui-step-form"
-                title="Github Rebo"
-              >
-                Github
-              </Link>
+              Daru React App
             </Typography>
           </main>
         </div>
