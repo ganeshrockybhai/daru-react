@@ -37,12 +37,12 @@ export default function GenerateResume(props) {
   function RequestResume(){
     axios({
       method: 'post',
-      url: 'http://localhost:3001/uploadjson',
+      url: 'http://45.76.117.24:3001/uploadjson',
       headers: {"Access-Control-Allow-Origin": "*"},
       data: content.content
     }).then(response => {
       console.log(response);
-      setResumeurl("http://localhost:3001"+response.data.file);
+      setResumeurl("http://45.76.117.24:3001/"+response.data.file);
       setDownloadReady(true);
   });
   }
