@@ -38,6 +38,7 @@ export default function GenerateResume(props) {
     axios({
       method: 'post',
       url: 'http://localhost:3001/uploadjson',
+      headers: {"Access-Control-Allow-Origin": "*"},
       data: content.content
     }).then(response => {
       console.log(response);
